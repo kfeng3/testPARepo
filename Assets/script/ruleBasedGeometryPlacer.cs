@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class ruleBasedGeometryPlacer : MonoBehaviour
 {
-    public GameObject thing;
-
-    
 
     public Vector3 position;
     public Vector3 scale;
@@ -23,7 +20,7 @@ public class ruleBasedGeometryPlacer : MonoBehaviour
     void Update()
     {
         Vector3 jiggle = new Vector3(position.x, position.y + Random.value, position.z);
-        this.transform.position = position;
+        this.transform.position = jiggle;
         this.transform.localScale = scale;
         this.transform.localEulerAngles = rotation;
     }

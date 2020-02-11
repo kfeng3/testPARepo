@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Art;
 
-public class ArtMakerLissajous : ArtMakerTemplate
+public class Lissajous : ArtMakerTemplate
 {
 
 	public override void MakeArt()

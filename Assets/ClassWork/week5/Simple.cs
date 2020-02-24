@@ -16,6 +16,7 @@ namespace Art
         public GameObject[] objects;
         public int amount = 10;
 
+       
         public override void MakeArt()
         {
             int amt = Random.Range(5, amount);
@@ -27,7 +28,16 @@ namespace Art
                 float s = Random.value * .25f;
                 g.transform.localScale = new Vector3(s, s, s);
                 g.transform.position = Random.insideUnitSphere*.5f;
+
+
+               
             }
+
+            
+
+
         }
+
+       
     }
 }
